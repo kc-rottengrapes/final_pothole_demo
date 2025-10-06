@@ -40,7 +40,7 @@ Our YOLOv8n segmentation model achieves excellent performance metrics:
 | Original Image | Detected Potholes |
 |----------------|-------------------|
 | ![Original Road](demo/before/0225.jpg) | ![Detected Potholes](demo/after/image_001.jpg) |
-| *Raw road image with potholes* | *2 potholes detected with confidence scores* |
+| *Raw road image with potholes* | *5 potholes detected with confidence scores* |
 
 ### 🎯 Detection Example
 - **Potholes Detected**: 2
