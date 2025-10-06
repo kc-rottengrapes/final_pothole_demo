@@ -1,0 +1,19 @@
+{
+  "model_info": {
+    "type": "segment",
+    "total_parameters": 3263811,
+    "trainable_parameters": 0,
+    "model_size_mb": 12.5,
+    "total_layers": 261
+  },
+  "performance": {
+    "avg_inference_time_ms": 43.6,
+    "fps": 23.0,
+    "throughput_per_minute": 1378.0
+  },
+  "assessment": {
+    "size_rating": "LIGHTWEIGHT",
+    "speed_rating": "MODERATE",
+    "overall_score": "GOOD"
+  }
+}

@@ -1,0 +1,20 @@
+POTHOLE DETECTION SUMMARY REPORT
+========================================
+
+Analysis Date: 2025-10-06 11:57:54
+Confidence Threshold: 0.2
+
+OVERALL STATISTICS:
+--------------------
+Total Images Processed: 4
+Images with Potholes: 4
+Images without Potholes: 0
+Total Potholes Detected: 12
+Average Potholes per Image: 3.00
+
+DETAILED RESULTS:
+--------------------
+image_001.jpg (original: 0225.jpg): 5 potholes
+image_002.jpg (original: 0226.jpg): 4 potholes
+image_003.jpg (original: 0227.jpg): 2 potholes
+image_004.jpg (original: 0228.jpg): 1 potholes

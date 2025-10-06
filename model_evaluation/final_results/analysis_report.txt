@@ -1,0 +1,44 @@
+
+POTHOLE DETECTION MODEL ANALYSIS REPORT
+======================================
+
+MODEL SPECIFICATIONS
+--------------------
+Architecture: segment
+Total Parameters: 3,263,811
+Model Size: 12.5 MB
+Total Layers: 261
+
+PERFORMANCE METRICS
+------------------
+Inference Time: 43.6 ms
+Frames Per Second: 23.0
+Throughput: 1378.0 frames/minute
+
+ASSESSMENT
+----------
+Size Rating: LIGHTWEIGHT
+Speed Rating: MODERATE
+Overall Score: GOOD
+
+DEPLOYMENT RECOMMENDATIONS
+-------------------------
+Mobile/Edge: Suitable
+Server: Excellent
+Real-time: Yes
+
+OPTIMIZATION SUGGESTIONS
+-----------------------
+1. Quantization: Reduce model size by 75%
+2. TensorRT: Improve inference speed by 2-3x
+3. ONNX: Enable cross-platform deployment
+4. Pruning: Remove redundant parameters
+
+TECHNICAL NOTES
+--------------
+- Model uses segmentation architecture
+- Optimized for 640x640 input resolution
+- Compatible with YOLO ecosystem
+- Suitable for production deployment
+
+Generated: 2025-10-06 11:19:15

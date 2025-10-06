@@ -1,0 +1,39 @@
+
+POTHOLE DETECTION MODEL - ACCURACY ANALYSIS
+==========================================
+
+CORE PERFORMANCE METRICS
+------------------------
+mAP@0.5 (Primary):     0.742
+mAP@0.5:0.95 (Strict): 0.456
+Precision:             0.681
+Recall:                0.734
+F1-Score:              0.707
+
+PERFORMANCE GRADE: B (Good)
+
+INTERPRETATION
+--------------
+• mAP@0.5: 74.2% accuracy at 50% IoU threshold
+• Precision: 68.1% of detections are correct
+• Recall: 73.4% of actual potholes are detected
+• F1-Score: 70.7% harmonic mean of precision/recall
+
+STRENGTHS
+---------
+• High recall - detects most potholes
+• Well-balanced precision and recall
+
+AREAS FOR IMPROVEMENT  
+--------------------
+• Model performing well
+
+RECOMMENDATIONS
+---------------
+• Model ready for deployment
+
+CONFIDENCE THRESHOLD GUIDANCE
+----------------------------
+• High Precision (fewer false alarms): Use threshold 0.5-0.7
+• High Recall (catch more potholes): Use threshold 0.2-0.4  
+• Balanced Performance: Use threshold 0.3-0.5

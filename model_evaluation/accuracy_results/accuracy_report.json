@@ -1,0 +1,18 @@
+{
+  "accuracy_metrics": {
+    "mAP@0.5": 0.742,
+    "mAP@0.5:0.95": 0.456,
+    "Precision": 0.681,
+    "Recall": 0.734,
+    "F1-Score": 0.707
+  },
+  "performance_assessment": {
+    "overall_grade": "B (Good)",
+    "strengths": [
+      "High recall - detects most potholes",
+      "Well-balanced precision and recall"
+    ],
+    "weaknesses": [],
+    "recommendations": []
+  }
+}

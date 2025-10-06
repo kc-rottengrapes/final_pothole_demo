@@ -1,0 +1,8 @@
+{
+  "model_type": "segment",
+  "total_parameters": 3263811,
+  "trainable_parameters": 0,
+  "model_size_mb": 12.5,
+  "total_layers": 261,
+  "architecture": "YOLOv8n"
+}
