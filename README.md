@@ -37,17 +37,15 @@ Our YOLOv8n segmentation model achieves excellent performance metrics:
 
 ### Before vs After Detection
 
-**Original Image:**
-```
-Input: Raw road image with potholes
-```
+| Original Image | Detected Potholes |
+|----------------|-------------------|
+| ![Original Road](demo/before/original_road.jpg) | ![Detected Potholes](demo/after/detected_road.jpg) |
+| *Raw road image with potholes* | *2 potholes detected with confidence scores* |
 
-**After Detection:**
-```
-Output: Annotated image with bounding boxes around detected potholes
-```
-
-*Sample detection showing potholes highlighted with bounding boxes and confidence scores*
+### 🎯 Detection Example
+- **Potholes Detected**: 2
+- **Confidence Scores**: 0.85, 0.72
+- **Processing Time**: 43.6ms
 
 ### 📊 Sample Detection Summary
 ```
@@ -147,6 +145,11 @@ pothole-detection/
 │   └── accuracy_results/
 │       ├── accuracy_report.txt
 │       └── accuracy_analysis.png
+├── 📁 demo/                        # Demo images
+│   ├── before/
+│   │   └── original_road.jpg       # Sample input
+│   └── after/
+│       └── detected_road.jpg       # Sample output
 └── 📁 pothole_results/            # Output folder (generated)
     ├── image_001.jpg
     ├── image_002.jpg
