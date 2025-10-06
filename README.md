@@ -2,7 +2,6 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-orange.svg)](https://ultralytics.com)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.68+-green.svg)](https://fastapi.tiangolo.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An AI-powered pothole detection system using YOLOv8 segmentation model for real-time road damage assessment. This system can process single or multiple images, detect potholes with high accuracy, and generate comprehensive reports.
@@ -13,7 +12,6 @@ An AI-powered pothole detection system using YOLOv8 segmentation model for real-
 - **📊 Batch Processing**: Process multiple images simultaneously
 - **📝 Detailed Reports**: Generate comprehensive detection summaries
 - **🏷️ Smart Renaming**: Automatically rename images with standardized format
-- **🚀 Fast API**: RESTful API for web integration
 - **📱 Real-time Processing**: 23 FPS inference speed
 
 ## 📈 Model Performance
@@ -133,51 +131,13 @@ pothole_results/
 └── detection_summary.txt  # Detailed report
 ```
 
-### 🌐 API Usage
 
-Start the FastAPI server:
-
-```bash
-uvicorn app:app --reload --host 0.0.0.0 --port 8000
-```
-
-**API Endpoints:**
-
-#### POST `/detect`
-Upload single or multiple images for pothole detection.
-
-**Parameters:**
-- `file`: Image file (jpg/png)
-- `conf`: Confidence threshold (0.1-0.9, default: 0.3)
-- `return_image`: Return annotated image (boolean, default: false)
-
-**Example using curl:**
-```bash
-curl -X POST "http://localhost:8000/detect" \
-     -F "file=@road_image.jpg" \
-     -F "conf=0.3" \
-     -F "return_image=true"
-```
-
-**Response (JSON):**
-```json
-{
-  "detections": [
-    {
-      "class": "pothole",
-      "confidence": 0.85,
-      "bbox": [[100, 150, 200, 250]]
-    }
-  ]
-}
-```
 
 ## 📁 Project Structure
 
 ```
 pothole-detection/
 ├── 📄 README.md                    # This file
-├── 🐍 app.py                       # FastAPI application
 ├── 🐍 test_image.py                # Local image processing
 ├── 🤖 best.pt                      # YOLOv8 model weights
 ├── 📋 requirements.txt             # Python dependencies
@@ -227,25 +187,7 @@ Our model evaluation shows strong performance across key metrics:
 - **Memory Usage**: ~500MB GPU memory
 - **CPU Usage**: Compatible with CPU inference
 
-## 🛠️ Development
 
-### Adding New Features
-
-1. **Fork the repository**
-2. **Create feature branch**: `git checkout -b feature/new-feature`
-3. **Make changes and test**
-4. **Submit pull request**
-
-### Model Improvement
-
-To improve model accuracy:
-
-1. **Collect more training data** (2000+ images)
-2. **Increase training epochs** (200-300)
-3. **Upgrade model size** (YOLOv8s/YOLOv8m)
-4. **Fine-tune hyperparameters**
-
-Expected improvements: 85-90% mAP@0.5
 
 ## 🐛 Troubleshooting
 
@@ -279,28 +221,10 @@ ModuleNotFoundError: No module named 'ultralytics'
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📞 Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/pothole-detection/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/pothole-detection/discussions)
-- **Email**: your.email@example.com
-
 ## 🙏 Acknowledgments
 
 - **Ultralytics** for the YOLOv8 framework
-- **FastAPI** for the web framework
 - **OpenCV** for image processing
-- **Contributors** who helped improve this project
 
 ---
 
